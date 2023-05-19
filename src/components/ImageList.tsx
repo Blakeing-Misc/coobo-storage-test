@@ -22,6 +22,7 @@ const ImageList = () => {
               fill
               src={`/images/${fileName}`}
               alt={fileName}
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 25vw"
             />
           </div>
         </li>
