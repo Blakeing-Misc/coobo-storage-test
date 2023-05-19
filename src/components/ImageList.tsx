@@ -13,12 +13,12 @@ const ImageList = () => {
   const imageFileNames = getImageFileNames();
 
   return (
-    <ul className="grid w-full grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
+    <ul className="grid my-32 w-full grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
       {imageFileNames.map((fileName) => (
         <li className="relative" key={fileName}>
           <div className="aspect-square block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
             <Image
-              className="pointer-events-none object-cover group-hover:opacity-75"
+              className="pointer-events-none object-contain group-hover:opacity-75"
               fill
               src={`/images/${fileName}`}
               alt={fileName}
