@@ -20,7 +20,9 @@ const ImageList = () => {
 
   return (
     <>
-      <h2 className="mt-32 mb-16 text-xl">Number of images: {imageCount}</h2>
+      <h2 className="mt-32 mb-16 text-xl">
+        Number of doggy images: {imageCount}
+      </h2>
       <ul className="grid mb-32 w-full grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
         {imageFileNames.map((fileName) => (
           <li className="relative" key={fileName}>
